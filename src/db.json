@@ -1,0 +1,32 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "name": "Bob Kline",
+        "address": "P.O.Box 12121 Nairobi",
+        "PhoneNumber": "072566787",
+        "Email": "bobkline@gmail.com"
+      },
+      {
+        "id": 2,
+        "name": "Ted Omondi",
+        "address": "P.O.Box 121122 Nakuru",
+        "PhoneNumber": "071019288",
+        "Email": "tedomondi@gmail.com"
+      },
+      {
+        "id": 3,
+        "name": "Janet Dola",
+        "address": "P.O.Box 121322 Mombasa",
+        "PhoneNumber": "071901425",
+        "Email": "janetdola@gmail.com"
+      },
+      {
+        "id": 4,
+        "name": "Ryan Dola",
+        "address": "P.O.Box 145322 Lodwar",
+        "PhoneNumber": "071901425",
+        "Email": "ryandola@yahoo.com"
+      }
+    ]
+  }
