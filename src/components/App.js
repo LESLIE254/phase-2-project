@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
-import ReadOnly from './ReadOnly';
+import Forms from './Forms';
+//import ReadOnly from './ReadOnly';
 // import Header from './Header';
 
 function App() {
@@ -66,44 +67,19 @@ function App() {
         <tbody>
           {contacts.map((contact) => {
             return(
-              <ReadOnly key={contact.id} contact={contact} />
+              <tr>
+              <td>{contact.name}</td>
+              <td>{contact.address}</td>
+              <td>{contact.phoneNumber}</td>
+              <td>{contact.email}</td>
+          </tr>
             )
           })}
          
         </tbody>
       </table>
       <h2>Add Contact</h2>
-      <form >
-        <input 
-        type="text"
-        name='name'
-        required= "required"
-        placeholder='Enter a name...'
-        
-        />
-        <input 
-        type="text"
-        name='address'
-        required= "required"
-        placeholder='Enter an address...'
-       
-        />
-        <input 
-        type="text"
-        name='number'
-        required= "required"
-        placeholder='Enter a number...'
-        
-        />
-         <input 
-        type="text"
-        name='email'
-        required= "required"
-        placeholder='Enter an email...'
-        
-        />
-        <button type='submit'>Add</button>
-      </form>
+      <Forms />
     </div>
   )
 }
