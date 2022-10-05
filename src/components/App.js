@@ -52,8 +52,8 @@ function App() {
   // }, [])
   return (
     <div className='app-container'>
-      <TableData />
-      <h2>Add Contact</h2>
+      <TableData  />
+      {/* <Forms /> */}
     </div>
   )
 }

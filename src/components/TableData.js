@@ -1,6 +1,7 @@
 ///import { keyboard } from '@testing-library/user-event/dist/keyboard'
 import React, {useState, useEffect} from 'react'
-import
+import Forms from './Forms'
+import ReadOnly from "./ReadOnly"
 
 function TableData() {
 
@@ -11,6 +12,9 @@ function TableData() {
         .then(resp => resp.json())
         .then(data => setContacts(data))
       }, [])
+      const handleAddData = (data) => {
+        console.log('new data',data)
+      }
 
   return (
     <div>
@@ -26,20 +30,16 @@ function TableData() {
         <tbody>
           {contacts.map((contact) => {
             return(
-                <>
-              <tr>
-              <td>{contact.name}</td>
-              <td>{contact.address}</td>
-              <td>{contact.phoneNumber}</td>
-              <td>{contact.email}</td>
-          </tr>
-          </>
+               <ReadOnly key={contact.id} contact={contact} />
             )
           })}
-          <Forms />
          
         </tbody>
       </table>
+      <div>
+      <h2>Add Contact</h2>
+      <Forms addContact ={handleAddData}/>
+      </div>
     </div>
   )
 }

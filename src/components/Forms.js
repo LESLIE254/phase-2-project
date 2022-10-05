@@ -1,15 +1,25 @@
 import React, { useState } from 'react'
 
-function Forms() {
+function Forms({addContact}) {
     const[name, setName] = useState("")
     const[address, setAddress] = useState("")
-    const[number, setNumber] = useState('')
+    const[phoneNumber, setPhoneNumber] = useState('')
     const [email, setEmail] = useState("")
 
     function handleSubmit(e) {
         e.preventDefault()
-        console.log("addsomething")
+        const formData = {
+            name: name,
+            address: address,
+            phoneNumber: phoneNumber,
+            email: email
+            
+        }
+        console.log("addsomething", formData)
+        addContact(formData)
     }
+
+    
   return (
     <div>
         <form onSubmit={handleSubmit}>
@@ -36,8 +46,8 @@ function Forms() {
         name='number'
         required= "required"
         placeholder='Enter a number...'
-        value={number}
-        onChange={(e) => setNumber(e.target.value)}
+        value={phoneNumber}
+        onChange={(e) => setPhoneNumber(e.target.value)}
         
         />
          <input 
