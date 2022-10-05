@@ -31,6 +31,18 @@ function TableData() {
         .then((newContact) => setContacts([...contacts, newContact]))
       }
 
+      const handleDeleteContact = (id) => {
+        fetch(`http://localhost:4000/contacts/${id}`, {
+          method: 'DELETE',
+        })
+        .then(resp => resp.json())
+        .then(() => {
+            const remainingContacts = contacts.filter((contact) => contact.id !== id)
+            setContacts(remainingContacts)
+        })
+        //console.log('delete', id);
+      }
+
   return (
     <div>
         <table>
@@ -40,12 +52,13 @@ function TableData() {
             <th>Address</th>
             <th>PhoneNumber</th>
             <th>Email</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
           {contacts.map((contact) => {
             return(
-               <ReadOnly key={contact.id} contact={contact} />
+               <ReadOnly key={contact.id} contact={contact} deleteContact={handleDeleteContact} />
             )
           })}
          

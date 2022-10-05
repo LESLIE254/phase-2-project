@@ -1,38 +1,24 @@
 {
   "contacts": [
     {
-      "id": 1,
-      "name": "Bob Kline",
-      "address": "P.O.Box 12121 Nairobi",
-      "phoneNumber": "072566787",
-      "email": "bobkline@gmail.com"
+      "name": "BobKline",
+      "address": "100 Momabasa",
+      "phoneNumber": "0797356353",
+      "email": "bobkline@gmail.com",
+      "id": 3
     },
     {
-      "id": 2,
-      "name": "Ted Omondi",
-      "address": "P.O.Box 121122 Nakuru",
-      "phoneNumber": "071019288",
-      "email": "tedomondi@gmail.com"
+      "name": "Tom Mboya ",
+      "address": "19299 Lodwar",
+      "phoneNumber": "079999999",
+      "email": "tommboya@yahoo.com",
+      "id": 4
     },
     {
-      "id": 3,
-      "name": "Janet Dola",
-      "address": "P.O.Box 121322 Mombasa",
-      "phoneNumber": "071901425",
-      "email": "janetdola@gmail.com"
-    },
-    {
-      "id": 4,
-      "name": "Ryan Dola",
-      "address": "P.O.Box 145322 Lodwar",
-      "phoneNumber": "071901425",
-      "email": "ryandola@yahoo.com"
-    },
-    {
-      "name": "Leslie Ngwono",
-      "address": "19190 Nairobi",
-      "phoneNumber": "0720056203",
-      "email": "lesngwono84@gmail.com",
+      "name": "Linda Gates",
+      "address": "16677 Loitoktok",
+      "phoneNumber": "0729939999",
+      "email": "lindagates@yahoo.com",
       "id": 5
     }
   ]
