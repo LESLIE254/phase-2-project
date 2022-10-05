@@ -1,8 +1,9 @@
 import React from 'react'
 function ReadOnly({contact,deleteContact}) {
-
+    console.log({deleteContact});
   
   return (
+
     <>
     
               <tr>

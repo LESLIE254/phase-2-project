@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+//import {useHistory} from "react-router-dom"
 
 function Forms({addContact}) {
     const[name, setName] = useState("")
@@ -15,10 +16,13 @@ function Forms({addContact}) {
             email: email
             
         }
-        console.log("addsomething", formData)
+        //console.log("addsomething", formData)
         addContact(formData)
-    }
+      
+       
 
+    }
+    console.log({addContact});
     
   return (
     <div>
@@ -59,7 +63,7 @@ function Forms({addContact}) {
         onChange={(e) => setEmail(e.target.value)}
         
         />
-        <button type='submit'>Add</button>
+       <button type='submit'>Add</button>
       </form>
     </div>
   )

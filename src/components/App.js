@@ -18,9 +18,7 @@ function App() {
         <Route exact path="/about">
         <About />
         </Route>
-      </Switch>
-      <Switch>
-        <Route exact path ="/table">
+        <Route >
         <TableData  />
         </Route>
       

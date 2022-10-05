@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import Forms from './Forms'
 import ReadOnly from "./ReadOnly"
-import {Route, Switch} from 'react-router-dom'
+import {Route, Switch, useHistory} from 'react-router-dom'
 
 function TableData() {
+  const history = useHistory()
 
     const [contacts, setContacts] = useState([])
 
@@ -24,7 +25,9 @@ function TableData() {
             body:JSON.stringify(data)
         })
         .then(resp => resp.json())
-        .then((newContact) => setContacts([...contacts, newContact]))
+        .then((newContact) =>{setContacts([...contacts, newContact])
+          history.push("/")
+        })
       }
 
       const handleDeleteContact = (id) => {
@@ -46,7 +49,7 @@ function TableData() {
     <h2>Contact List</h2>
     </div>
         <table>
-        <thead>
+          <thead>
           <tr>
             <th>Name</th>
             <th>Address</th>
@@ -54,7 +57,8 @@ function TableData() {
             <th>Email</th>
             <th>Action</th>
           </tr>
-        </thead>
+          </thead>
+      
         <tbody>
           {contacts.map((contact) => {
             return(
