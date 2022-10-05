@@ -27,7 +27,13 @@
       "address": "P.O.Box 145322 Lodwar",
       "phoneNumber": "071901425",
       "email": "ryandola@yahoo.com"
+    },
+    {
+      "name": "Leslie Ngwono",
+      "address": "19190 Nairobi",
+      "phoneNumber": "0720056203",
+      "email": "lesngwono84@gmail.com",
+      "id": 5
     }
-   
   ]
 }

@@ -12,8 +12,23 @@ function TableData() {
         .then(resp => resp.json())
         .then(data => setContacts(data))
       }, [])
+
       const handleAddData = (data) => {
-        console.log('new data',data)
+        // //let id = contacts.length +1
+        // let newContact = {...data, id:id}
+        // console.log('new data',data)
+        // setContacts([...contacts, newContact])
+
+        fetch("http://localhost:4000/contacts", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body:JSON.stringify(data)
+        })
+        .then(resp => resp.json())
+        .then((newContact) => setContacts([...contacts, newContact]))
       }
 
   return (
