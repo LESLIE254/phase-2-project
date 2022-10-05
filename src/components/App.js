@@ -19,7 +19,13 @@ function App() {
         <About />
         </Route>
       </Switch>
-      <TableData  />
+      <Switch>
+        <Route exact path ="/table">
+        <TableData  />
+        </Route>
+      
+      </Switch>
+      
     </div>
     </>
   )

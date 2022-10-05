@@ -1,5 +1,4 @@
 import React from 'react'
-
 function ReadOnly({contact,deleteContact}) {
 
   
@@ -11,9 +10,12 @@ function ReadOnly({contact,deleteContact}) {
               <td>{contact.address}</td>
               <td>{contact.phoneNumber}</td>
               <td>{contact.email} </td>
+          
               <td>
                 <button onClick= {() => deleteContact(contact.id)} type="buton">Delete
-              </button></td>
+              </button>
+              </td>
+            
           </tr>
     </>
   )
