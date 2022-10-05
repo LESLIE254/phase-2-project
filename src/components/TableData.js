@@ -1,4 +1,3 @@
-///import { keyboard } from '@testing-library/user-event/dist/keyboard'
 import React, {useState, useEffect} from 'react'
 import Forms from './Forms'
 import ReadOnly from "./ReadOnly"
@@ -14,11 +13,7 @@ function TableData() {
       }, [])
 
       const handleAddData = (data) => {
-        // //let id = contacts.length +1
-        // let newContact = {...data, id:id}
-        // console.log('new data',data)
-        // setContacts([...contacts, newContact])
-
+        
         fetch("http://localhost:4000/contacts", {
             method: 'POST',
             headers: {
