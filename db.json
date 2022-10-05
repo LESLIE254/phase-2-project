@@ -20,6 +20,13 @@
       "phoneNumber": "0729939999",
       "email": "lindagates@yahoo.com",
       "id": 5
+    },
+    {
+      "name": "Nicholas Mwangi",
+      "address": "254545 Kitale",
+      "phoneNumber": "0720056203",
+      "email": "nickomwangi@gmail.com",
+      "id": 6
     }
   ]
 }

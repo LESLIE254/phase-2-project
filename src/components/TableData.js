@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Forms from './Forms'
 import ReadOnly from "./ReadOnly"
+import {Route, Switch} from 'react-router-dom'
 
 function TableData() {
 
@@ -39,7 +40,11 @@ function TableData() {
       }
 
   return (
+    
     <div>
+      <div>
+    <h2>Contact List</h2>
+    </div>
         <table>
         <thead>
           <tr>
@@ -53,15 +58,26 @@ function TableData() {
         <tbody>
           {contacts.map((contact) => {
             return(
+              <Switch>
+                <Route exact path="/">
                <ReadOnly key={contact.id} contact={contact} deleteContact={handleDeleteContact} />
+               </Route>
+               </Switch>
             )
           })}
          
         </tbody>
       </table>
+     
       <div>
+      
+      
+      <Switch>
+      <Route path="/add">
       <h2>Add Contact</h2>
       <Forms addContact ={handleAddData}/>
+      </Route>
+      </Switch>
       </div>
     </div>
   )

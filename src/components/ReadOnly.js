@@ -5,6 +5,7 @@ function ReadOnly({contact,deleteContact}) {
   
   return (
     <>
+    
               <tr>
               <td>{contact.name}</td>
               <td>{contact.address}</td>
