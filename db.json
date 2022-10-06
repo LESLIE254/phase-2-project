@@ -2,7 +2,7 @@
   "contacts": [
     {
       "name": "BobKline",
-      "address": "100 Momabasa",
+      "address": "100 Mombasa",
       "phoneNumber": "0797356353",
       "email": "bobkline@gmail.com",
       "id": 3
@@ -34,27 +34,6 @@
       "phoneNumber": "09999999",
       "email": "jackma@yahoo.com",
       "id": 7
-    },
-    {
-      "name": "wesley snipes",
-      "address": "6373279 Bondo",
-      "phoneNumber": "1323134",
-      "email": "leslie@gmail.com",
-      "id": 8
-    },
-    {
-      "name": "Lion",
-      "address": "46r65",
-      "phoneNumber": "1526",
-      "email": "leslie@gmail.com",
-      "id": 9
-    },
-    {
-      "name": "kangaroo",
-      "address": "24335",
-      "phoneNumber": "0720056203",
-      "email": "lesngwono84@gmail.com",
-      "id": 10
     }
   ]
 }
