@@ -59,7 +59,7 @@ function NavBar() {
           <NavLink exact to='/add'>Add</NavLink>
         </li>
         <li className='active'>
-          <NavLink exact to='/about'>About</NavLink>
+          {/* <NavLink exact to='/search'>Search</NavLink> */}
         </li>
       </ul>
     </nav>

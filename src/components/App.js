@@ -2,14 +2,14 @@ import React from 'react';
 import './App.css';
 //import Forms from './Forms';
 import TableData from './TableData';
-//import ReadOnly from './ReadOnly';
-// import Header from './Header';
+//import Search from './Search';
 import About from './About';
 import {Route, Switch} from 'react-router-dom'
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 function App() {
-
+ 
   return (
     <>
     <div className='app-container'>
@@ -21,9 +21,8 @@ function App() {
         <Route >
         <TableData  />
         </Route>
-      
       </Switch>
-      
+      <Footer />
     </div>
     </>
   )

@@ -2,11 +2,14 @@ import React, {useState, useEffect} from 'react'
 import Forms from './Forms'
 import ReadOnly from "./ReadOnly"
 import {Route, Switch, useHistory} from 'react-router-dom'
+import Search from './Search'
+
 
 function TableData() {
   const history = useHistory()
 
     const [contacts, setContacts] = useState([])
+    //const [searchFilter, setSearchFilter] = useState("")
 
     useEffect(() => {
         fetch("http://localhost:4000/contacts")
@@ -41,13 +44,22 @@ function TableData() {
         })
         //console.log('delete', id);
       }
+      //const filteredContacts = contacts.filter(contact => searchFilter===""? true:(contact) =>contact.name.includes(searchFilter))
+      function handleOnSEarching(search) {
+       setContacts(contacts => contacts.filter((contact) =>contact.name.includes(search)))
+       //setSearchFilter(search)
+      }
 
   return (
     
     <div>
+      <Search onSearching={handleOnSEarching}/>
+     
+     
       <div>
     <h2>Contact List</h2>
     </div>
+    <form>
         <table>
           <thead>
           <tr>
@@ -72,6 +84,7 @@ function TableData() {
          
         </tbody>
       </table>
+      </form>
      
       <div>
       

@@ -1,8 +1,10 @@
+
 .app-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 1rem;
+  min-height: 100vh;
 }
 
 table {
@@ -77,4 +79,14 @@ nav ul {
  .nav li:hover {
   background-color: #777;
 }
-  
+.search {
+  justify-content: center;
+}
+.foot {
+  background-color: #333;
+  color: #ffffff;
+  padding: 1rem;
+  /* min-height: 100vh; */
+  margin-top: auto;
+
+}
