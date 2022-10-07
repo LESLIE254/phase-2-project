@@ -45,15 +45,15 @@ function TableData() {
         //console.log('delete', id);
       }
       //const filteredContacts = contacts.filter(contact => searchFilter===""? true:(contact) =>contact.name.includes(searchFilter))
-      function handleOnSEarching(search) {
-       setContacts(contacts => contacts.filter((contact) =>contact.name.includes(search)))
-       //setSearchFilter(search)
-      }
-
+         function handleOnSearching(search) {
+          setContacts(contacts => contacts.filter((contact) =>contact.name.includes(search)))
+        }
+    
   return (
     
     <div>
-      <Search onSearching={handleOnSEarching}/>
+      <Search onSearching={handleOnSearching}/>
+      {/* <Search onSearching={handleSearch}/> */}
      
      
       <div>
