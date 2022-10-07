@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 // function NavBar() {
 //     const linkStyles = {
 //         display: "inline-block",
@@ -13,7 +13,7 @@ import {NavLink} from 'react-router-dom'
 //   return (
 //     <nav className='nav'>
 
-//         <NavLink
+//         <Link
 //         to="/"
 //         exact
 //         style={linkStyles}
@@ -22,8 +22,8 @@ import {NavLink} from 'react-router-dom'
 //         }}
 //       >
 //         Home
-//       </NavLink>
-//       {/* <NavLink
+//       </Link>
+//       {/* <Link
 //         to="/about"
 //         exact
 //         style={linkStyles}
@@ -32,8 +32,8 @@ import {NavLink} from 'react-router-dom'
 //         }}
 //       >
 //         About
-//       </NavLink> */}
-//       <NavLink
+//       </Link> */}
+//       <Link
 //         to="/add"
 //         exact
 //         style={linkStyles}
@@ -42,7 +42,7 @@ import {NavLink} from 'react-router-dom'
 //         }}
 //       >
 //         Add
-//       </NavLink>
+//       </Link>
 //     </nav>
 //   )
 // }
@@ -53,13 +53,13 @@ import {NavLink} from 'react-router-dom'
 function NavBar() {
   return (
     <nav className='nav'>
-      <NavLink exact to='/'className='site-title'>Contact App</NavLink>
+      <Link exact to='/'className='site-title'>Contact App</Link>
       <ul>
         <li className='active'>
-          <NavLink exact to='/add'>Add</NavLink>
+          <Link exact to='/add'>Add</Link>
         </li>
         <li className='active'>
-          {/* <NavLink exact to='/search'>Search</NavLink> */}
+          <Link exact to='/about'>About</Link>
         </li>
       </ul>
     </nav>

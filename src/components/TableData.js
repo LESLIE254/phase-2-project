@@ -47,15 +47,15 @@ function TableData() {
       //const filteredContacts = contacts.filter(contact => searchFilter===""? true:(contact) =>contact.name.includes(searchFilter))
          function handleOnSearching(search) {
           setContacts(contacts => contacts.filter((contact) =>contact.name.includes(search)))
+          
         }
     
   return (
     
     <div>
+     
       <Search onSearching={handleOnSearching}/>
-      {/* <Search onSearching={handleSearch}/> */}
-     
-     
+  
       <div>
     <h2>Contact List</h2>
     </div>
