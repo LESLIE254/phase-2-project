@@ -16,7 +16,6 @@ function Forms({addContact}) {
             email: email
             
         }
-        //console.log("addsomething", formData)
         addContact(formData)
       
        

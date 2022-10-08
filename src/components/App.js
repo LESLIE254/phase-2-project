@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 //import Forms from './Forms';
 import TableData from './TableData';
-//import Search from './Search';
 import About from './About';
 import {Route, Switch} from 'react-router-dom'
 import NavBar from './NavBar';

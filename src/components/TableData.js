@@ -42,9 +42,9 @@ function TableData() {
             const remainingContacts = contacts.filter((contact) => contact.id !== id)
             setContacts(remainingContacts)
         })
-        //console.log('delete', id);
+      
       }
-      //const filteredContacts = contacts.filter(contact => searchFilter===""? true:(contact) =>contact.name.includes(searchFilter))
+      
          function handleOnSearching(search) {
           setContacts(contacts => contacts.filter((contact) =>contact.name.includes(search)))
           
