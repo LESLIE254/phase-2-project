@@ -1,0 +1,39 @@
+{
+  "contacts": [
+    {
+      "name": "BobKline",
+      "address": "100 Mombasa",
+      "phoneNumber": "0797356353",
+      "email": "bobkline@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Tom Mboya ",
+      "address": "19299 Lodwar",
+      "phoneNumber": "079999999",
+      "email": "tommboya@yahoo.com",
+      "id": 4
+    },
+    {
+      "name": "Linda Gates",
+      "address": "16677 Loitoktok",
+      "phoneNumber": "0729939999",
+      "email": "lindagates@yahoo.com",
+      "id": 5
+    },
+    {
+      "name": "Ledama OLe Kina ",
+      "address": "12345 Loitoktok",
+      "phoneNumber": "0794563723",
+      "email": "ledama@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "Katelyn",
+      "address": "1010 Mombasa",
+      "phoneNumber": "072425522",
+      "email": "kate@gmail.com",
+      "id": 7
+    }
+  ]
+}

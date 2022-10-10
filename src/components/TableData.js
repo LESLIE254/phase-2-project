@@ -12,14 +12,14 @@ function TableData() {
     //const [searchFilter, setSearchFilter] = useState("")
 
     useEffect(() => {
-        fetch(`${process.env.REACT_APP_API_URL}/contacts`)
+        fetch("http://localhost:4000/contacts")
         .then(resp => resp.json())
         .then(data => setContacts(data))
       }, [])
 
       const handleAddData = (data) => {
         
-        fetch(`${process.env.REACT_APP_API_URL}/contacts`, {
+        fetch("http://localhost:4000/contacts", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ function TableData() {
       }
 
       const handleDeleteContact = (id) => {
-        fetch(`${process.env.REACT_APP_API_URL}${id}/contacts`, {
+        fetch(`http://localhost:4000/contacts${id}`, {
           method: 'DELETE',
         })
         .then(resp => resp.json())
