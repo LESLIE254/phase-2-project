@@ -15,3 +15,5 @@ I also use Json-server to create a RESTful API for my back-end. </br>
 I do not use an external API to obtain my data but instead store my data locally in adb.json file.<br>
 The port I ran my json-server is port 4000(json-server --watch db.json --port=4000).<br>
 The react app is ran on port 3000 by just entering "npm start".
+***
+To view my site you can visit: <https://dulcet-madeleine-a15502.netlify.app/>
