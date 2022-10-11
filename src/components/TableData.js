@@ -12,14 +12,14 @@ function TableData() {
     //const [searchFilter, setSearchFilter] = useState("")
 
     useEffect(() => {
-        fetch("http://localhost:4000/contacts")
+        fetch("https://morning-journey-15428.herokuapp.com/contacts")
         .then(resp => resp.json())
         .then(data => setContacts(data))
       }, [])
 
       const handleAddData = (data) => {
         
-        fetch("http://localhost:4000/contacts", {
+        fetch("https://morning-journey-15428.herokuapp.com/contacts", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ function TableData() {
       }
 
       const handleDeleteContact = (id) => {
-        fetch(`http://localhost:4000/contacts${id}`, {
+        fetch(`https://morning-journey-15428.herokuapp.com/contacts${id}`, {
           method: 'DELETE',
         })
         .then(resp => resp.json())

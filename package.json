@@ -1,5 +1,4 @@
 {
-  "homepage": "http://leslie254.github.io/phase-2-project",
   "name": "contact-manager-app",
   "version": "0.1.0",
   "private": true,
@@ -41,8 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
